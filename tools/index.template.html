@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pradeep Tarai, graphic designer and video editor</title>
+  <meta name="description" content="Pradeep Tarai designs social posts, reels and logos for jewellers, drink brands, travel agencies and retailers in India.">
+  <meta property="og:title" content="Pradeep Tarai, graphic designer and video editor">
+  <meta property="og:description" content="Social posts, reels and logos for jewellers, drink brands and travel agencies.">
+  <meta property="og:image" content="assets/work/w03.webp">
+  <meta name="theme-color" content="#eef0f5">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Unbounded:wght@700&display=swap">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip" href="#work">Skip to the work</a>
+
+  <nav class="rail" aria-label="Sections">
+    <a class="rail__mark" href="#top" aria-label="Pradeep Tarai, back to top">PT</a>
+    <ul role="list">
+      <li><a href="#work"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7.5" height="7.5" rx="1.5"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="1.5"/><rect x="3" y="13.5" width="7.5" height="7.5" rx="1.5"/><rect x="13.5" y="13.5" width="7.5" height="7.5" rx="1.5"/></svg><span>Posts</span></a></li>
+      <li><a href="#reels"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="2.5" width="14" height="19" rx="2.5"/><path d="M10 9l5 3-5 3z"/></svg><span>Reels</span></a></li>
+      <li><a href="#experience"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V4.5h6V7"/></svg><span>Jobs</span></a></li>
+      <li><a href="#about"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4.5 20.5c1.2-4 4-6 7.5-6s6.3 2 7.5 6"/></svg><span>About</span></a></li>
+      <li><a href="#contact"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6l8.5 7 8.5-7"/></svg><span>Contact</span></a></li>
+    </ul>
+  </nav>
+
+  <main id="top">
+    <header class="hero container">
+      <div class="hero__text">
+        <h1><span class="hero__name">Pradeep Tarai</span> <span class="hero__claim">Posters and reels that sell</span></h1>
+        <p class="hero__lede">Graphic designer and video editor for jewellers, drink brands and travel.</p>
+        <div class="hero__actions">
+          <a class="btn" href="{{WHATSAPP}}" target="_blank" rel="noopener">WhatsApp Pradeep</a>
+          <a class="link" href="#work">See {{POST_COUNT}} posts and {{REEL_COUNT}} reels</a>
+        </div>
+      </div>
+      <div class="hero__stage">
+        {{HERO_A}}
+        {{HERO_B}}
+        <figure class="hero__reel">
+          <video class="hero__video" muted loop playsinline preload="metadata" poster="assets/video/reel-05.webp" width="540" height="960" aria-label="Jewellery campaign reel, playing without sound">
+            <source src="assets/video/reel-05.mp4" type="video/mp4">
+          </video>
+          <button type="button" class="hero__pause" aria-pressed="false" hidden>Pause</button>
+        </figure>
+      </div>
+    </header>
+
+    <section class="work" id="work" aria-labelledby="work-h">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="work-h">Five trades, one pile of proofs</h2>
+          <p>One card per trade he designs for. Open any card for every post.</p>
+        </div>
+        <div class="stack">
+{{SECTORS}}
+        </div>
+      </div>
+    </section>
+
+    <section class="reels" id="reels" aria-labelledby="reels-h">
+      <div class="container">
+        <div class="section-head section-head--split">
+          <h2 id="reels-h">Reels cut for the feed</h2>
+          <p>Vertical edits, timed to the beat. Tap one to play with sound.</p>
+        </div>
+        <ul class="reels__grid" role="list">
+{{REELS}}
+        </ul>
+        <button type="button" class="chip chip--dark reels__more" hidden aria-expanded="false">Show all {{REEL_COUNT}} reels</button>
+      </div>
+    </section>
+
+    <section class="experience container" id="experience" aria-labelledby="exp-h">
+      <h2 id="exp-h">Four studios since 2022</h2>
+      <ol class="roles" role="list" reversed>
+{{ROLES}}
+      </ol>
+    </section>
+
+    <section class="about container" id="about" aria-labelledby="about-h">
+      <figure class="about__photo">
+        <img src="assets/pradeep.webp" width="438" height="368" alt="Pradeep Tarai, outdoors in a checked shirt and sunglasses" loading="lazy" decoding="async">
+      </figure>
+      <div class="about__text">
+        <h2 id="about-h">A designer who also cuts the reel</h2>
+        <p>Three years of turning a client brief into a product ad, a social post or a reel, for print and for the phone. Branding, marketing collateral and web graphics too.</p>
+        <dl class="facts">
+          <div><dt>Tools</dt><dd>Adobe Creative Suite, Canva, Filmora</dd></div>
+          <div><dt>Strengths</dt><dd>Typography, layout, product retouching</dd></div>
+          <div><dt>Training</dt><dd>Graphic design course, IICS, 2020 to 2021</dd></div>
+          <div><dt>School</dt><dd>Higher Secondary, Sarvodya Vidyalaya, Delhi, 2020</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-h">
+      <div class="container contact__inner">
+        <h2 id="contact-h">Send the brief</h2>
+        <p class="contact__lede">Tell Pradeep the product, the platform and the date it goes live.</p>
+        <a class="contact__mail" href="mailto:{{EMAIL}}">{{EMAIL}}</a>
+        <ul class="contact__list" role="list">
+          <li><a href="tel:{{PHONE_1_TEL}}">{{PHONE_1}}</a></li>
+          <li><a href="tel:{{PHONE_2_TEL}}">{{PHONE_2}}</a></li>
+          <li><a href="{{BEHANCE}}" target="_blank" rel="noopener">Behance portfolio</a></li>
+          <li><a href="assets/Pradeep-Tarai-CV.pdf" download>Download CV (PDF)</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot container">
+    <p>Pradeep Tarai, graphic designer and video editor. Bhubaneswar and New Delhi.</p>
+    <p>All posts and reels shown were designed or edited by Pradeep for the brands named.</p>
+  </footer>
+
+  <aside class="dock" aria-label="Hire Pradeep">
+    <p class="dock__text">Need posts or reels this month?</p>
+    <a class="btn btn--small" href="{{WHATSAPP}}" target="_blank" rel="noopener">WhatsApp Pradeep</a>
+  </aside>
+
+  <dialog class="gallery" aria-labelledby="gallery-h">
+    <div class="gallery__bar">
+      <h2 id="gallery-h" class="gallery__title"></h2>
+      <button type="button" class="gallery__close" aria-label="Close gallery">Close</button>
+    </div>
+    <ul class="gallery__grid" role="list"></ul>
+  </dialog>
+
+  <script>window.GALLERY = {{GALLERY_JSON}};</script>
+  <script src="assets/js/site.js" defer></script>
+</body>
+</html>
